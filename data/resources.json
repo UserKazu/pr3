@@ -1,0 +1,20 @@
+[
+  {
+    "id": "8acca90f-94dd-4470-ab2d-ac7431367783",
+    "name": "Iron",
+    "type": "Metal",
+    "amount": 10,
+    "price": 100,
+    "createdAt": "2025-11-24T20:21:37.370Z",
+    "updatedAt": "2025-11-24T20:21:37.370Z"
+  },
+  {
+    "id": "b2198cfd-b6b5-4bea-959f-98a976b861c4",
+    "name": "Laptop",
+    "type": "Electronics",
+    "amount": 5,
+    "price": 1500,
+    "createdAt": "2025-12-04T20:39:02.943Z",
+    "updatedAt": "2025-12-04T20:39:02.943Z"
+  }
+]

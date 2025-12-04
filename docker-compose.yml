@@ -1,0 +1,28 @@
+version: '3.8'
+services:
+  app:
+    build:
+      context: .
+    container_name: fastify_app
+    environment:
+      - NODE_ENV=development
+    volumes:
+      - ./:/usr/src/app
+      - /usr/src/app/node_modules
+    networks:
+      - webnet
+  nginx:
+    image: nginx:stable-alpine
+    container_name: fastify_nginx
+    depends_on:
+      - app
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf:ro
+    networks:
+      - webnet
+
+networks:
+  webnet:
+    driver: bridge
